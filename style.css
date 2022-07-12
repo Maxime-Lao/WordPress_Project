@@ -10587,6 +10587,12 @@ body.dark {
   font-size: 1rem;
   letter-spacing: 0.1em;
   padding: 2.875rem 2rem 2rem 5.875rem;
+  background: #050A3A;
+}
+
+#site-header .logo {
+  position: absolute;
+  float: left;
 }
 
 #site-header ul {
@@ -10844,4 +10850,15 @@ body.dark {
   line-height: 42px;
   /* or 162% */
   color: #FFFFFF;
+}
+
+.error {
+  padding: 12em 5em 12em 5em;
+}
+
+#s {
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  width: 70%;
 }
