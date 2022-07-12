@@ -10,7 +10,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-6 col-md-6 mb-30">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/svg/logo.svg" class="white-svg" alt="logo">
+						<img id="logo" src="<?php bloginfo('template_url'); ?>/assets/images/svg/logo.svg" class="white-svg" alt="logo">
 					</div>
 					<div class="col-xl-6 col-md-6 mb-30">
 						<?php

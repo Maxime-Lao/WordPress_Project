@@ -32,6 +32,9 @@ get_header();
 	</section>
 </main><!-- #site-content -->
 
+<script> 
+	document.getElementById("site-header").style.background = "#050A3A";
+</script>
 <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
 
 <?php
