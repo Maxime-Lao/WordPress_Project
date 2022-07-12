@@ -10587,7 +10587,6 @@ body.dark {
   font-size: 1rem;
   letter-spacing: 0.1em;
   padding: 2.875rem 2rem 2rem 5.875rem;
-  background: #050A3A;
 }
 
 #site-header .logo {
@@ -10821,6 +10820,20 @@ body.dark {
   margin-right: auto;
   max-width: 120rem;
   width: calc(100% - 4rem);
+}
+
+.uwu {
+  height: 105px;
+  left: 0%;
+  right: -0.19%;
+  top: calc(50% - 105px/2);
+  /* Heading 1 */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 5px;
+  color: #050A3A;
 }
 
 .entry-title {
