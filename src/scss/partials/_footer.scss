@@ -1,23 +1,45 @@
-#site-footer{
+.footer-section{
 	font-family: $font1;
-	border-top: solid thin var(--light-grey);
-	margin-top: rem(34);
-	padding: rem(66) 0;
-	text-align: center;
-	#searchform{
-		margin: rem(34) 0;
-		input{
-			border: solid thin var(--light-grey);
+	background: #050A3A;
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	.cta-text {
+		padding-right: 15px;
+		display: inline-block;
+
+		h4 {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 2px;
 		}
-		[type="submit"]{
-			color: var(--text-color);
-			border: none;
-			background-color: transparent;
-			transition: color 0.3s;
-			@include text4;
-			&:hover{
-				color: var(--main-color);
-			}
+
+		span {
+			color: white;
+			font-size: 15px;
 		}
 	}
+}
+
+.copyright-text p {
+	margin: 0;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.footer-menu li {
+	display: inline-block;
+	margin-left: 20px;
+}
+  .footer-menu li:hover a{
+	color: #ff5e14;
+}
+  .footer-menu li a {
+	font-size: 14px;
+	color: #878787;
+}
+
+.white-svg {
+    filter: brightness(0) invert(1);
 }

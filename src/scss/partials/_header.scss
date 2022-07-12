@@ -1,6 +1,7 @@
 #site-header{
 	@include text3;
-	padding: rem(46) 0 rem(94);
+	padding: 2.875rem 2rem 2rem 5.875rem;
+
 	ul{
 		@include reset-list;
 		display: flex;
