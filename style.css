@@ -48,13 +48,8 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 84px;
-  line-height: 105px;
-
-  color: #C4C4C4;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -442,17 +437,8 @@ hr:not([size]) {
   }
 }
 
-h2 {
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 63px;
-  line-height: 79px;
-
-  /* identical to box height */
-  letter-spacing: 3px;
-
-  color: #C4C4C4;
+.h2, h2 {
+  font-size: calc(1.325rem + .9vw);
 }
 
 @media (min-width: 1200px) {
@@ -461,17 +447,8 @@ h2 {
   }
 }
 
-h3 {
-  
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 47px;
-  line-height: 59px;
-
-  /* identical to box height */
-
-  color: #C4C4C4;
+.h3, h3 {
+  font-size: calc(1.3rem + .6vw);
 }
 
 @media (min-width: 1200px) {
@@ -480,17 +457,8 @@ h3 {
   }
 }
 
-h4 {
-  
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 47px;
-  line-height: 59px;
-
-  /* identical to box height */
-
-  color: #C4C4C4;
+.h4, h4 {
+  font-size: calc(1.275rem + .3vw);
 }
 
 @media (min-width: 1200px) {
@@ -499,32 +467,12 @@ h4 {
   }
 }
 
-h5 {
-  /* Heading 5 */
-
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 34px;
-
-  /* identical to box height */
-
-  color: #C4C4C4;
+.h5, h5 {
+  font-size: 1.25rem;
 }
 
-h6 {
-  /* Heading 6 */
-
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-
-  /* identical to box height */
-
-  color: #C4C4C4;
+.h6, h6 {
+  font-size: 1rem;
 }
 
 p {
@@ -10949,4 +10897,23 @@ body.dark {
   border-bottom: 2px solid gray;
   background-color: transparent;
   width: 70%;
+}
+
+
+.header-class {
+  position: absolute;
+  height: 105px;
+  left: 0%;
+  right: 0.27%;
+  top: calc(50% - 105px/2 - 1px);
+
+  /* Heading 1 */
+
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 84px;
+  line-height: 105px;
+
+  color: #050A3A;
 }
