@@ -1,26 +1,26 @@
-<section class="section_three_home">
-    <div class="container section_three">
-        <div>
-            <h1 class="titre"><?php echo get_theme_mod('home_section_three_h1') ?></h1>
-        </div>
-        <div class="images">
-            <div>
-                <img class="image" src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_1')) ?>">
-            </div>
-            <div>
-                <img class="image" src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_2')) ?>">
-            </div>
-            <div>
-                <img class="image" src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_3')) ?>">
-            </div>
-            <div>
-                <img class="image" src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_4')) ?>">
-            </div>
-            <div>
-                <img class="image" src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_3')) ?>">
-            </div>
-            <div>
-                <img class="image" src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_4')) ?>">
+<section class="partners">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <h1 class="uwu"><?= $post->post_title ?></h1><br>
+            <div class="partners-flex">
+                <div class="flex-item">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_first_image')) ?>">
+                </div>
+                <div class="flex-item">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_second_image')) ?>">
+                </div>
+                <div class="flex-item">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_third_image')) ?>">
+                </div>
+                <div class="flex-item">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_fourth_image')) ?>">
+                </div>
+                <div class="flex-item">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_fifth_image')) ?>">
+                </div>
+                <div class="flex-item">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_sixth_image')) ?>">
+                </div>
             </div>
         </div>
     </div>
