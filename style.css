@@ -10618,12 +10618,16 @@ body.dark {
   line-height: 1;
 }
 
+body {
+  position: relative;
+}
+
 .footer-section {
   font-family: "Source Serif Pro", serif;
   background: #050A3A;
   width: 100%;
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
 }
 
 .footer-section .cta-text {

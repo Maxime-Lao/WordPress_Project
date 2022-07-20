@@ -1,9 +1,13 @@
+body{
+	position: relative;
+}
+
 .footer-section{
 	font-family: $font1;
 	background: #050A3A;
 	width: 100%;
 	position: absolute;
-	bottom: 0%;
+	bottom: 0;
 	.cta-text {
 		padding-right: 15px;
 		display: inline-block;

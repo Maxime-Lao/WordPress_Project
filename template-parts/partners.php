@@ -8,7 +8,7 @@
     <main>	
         <div class="container">
             <section class="error">
-                <h1 class="uwu"><?= yourtheme_setup(); ?></h1><br>
+                <h1 class="uwu"><?= $post->post_title ?></h1><br>
                 <div class="footer-cta pt-5 pb-5">
                     <div class="row">
                         <div class="col-xl-2 col-md-2 mb-30">

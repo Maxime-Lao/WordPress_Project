@@ -1,4 +1,5 @@
 <?php if ($the_query->have_posts()) { ?>
+<h1>Search results for: <?php echo get_search_query(); ?></h1>
 <div class="post-list-wrapper">
 	<ul class="post-list">
 		<?php while($the_query->have_posts()) { 
@@ -10,6 +11,7 @@
 					<article>
 						<h1><?= $post->post_title ?></h1>
 						<time><?= date_i18n('j F Y', get_post_timestamp($post)) ?></time>
+						<h1><?= $post->post_content ?></h1>
 					</article>
 				</a>
 			</li>

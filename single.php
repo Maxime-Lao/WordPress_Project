@@ -2,6 +2,11 @@
 
 <main id="site-content">
 	<div class="container">
+		<!--
+		<aside>
+			<?= get_sidebar() ?>
+		</aside>
+		-->
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<article class="single-post">
