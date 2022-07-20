@@ -1,27 +1,25 @@
-<section class="partners">
-    <div class="container">
-        <div class="footer-cta pt-5 pb-5">
-            <h1 class="uwu"><?= $post->post_title ?></h1><br>
+<section class="partners-home">
+    <div>
+            <h1 class="uwu"><?php echo get_theme_mod('home_section_three_h1') ?></h1><br>
             <div class="partners-flex">
                 <div class="flex-item">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_first_image')) ?>">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_1')) ?>">
                 </div>
                 <div class="flex-item">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_second_image')) ?>">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_2')) ?>">
                 </div>
                 <div class="flex-item">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_third_image')) ?>">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_3')) ?>">
                 </div>
                 <div class="flex-item">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_fourth_image')) ?>">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_4')) ?>">
                 </div>
                 <div class="flex-item">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_fifth_image')) ?>">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_5')) ?>">
                 </div>
                 <div class="flex-item">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('partners_section_sixth_image')) ?>">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_6')) ?>">
                 </div>
             </div>
-        </div>
     </div>
 </section>

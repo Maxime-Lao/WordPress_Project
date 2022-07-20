@@ -153,6 +153,10 @@
         height: 100%;
         margin-left: 23%;
     }
+    .partners-home{
+        position: relative;
+        margin-top: 100px;
+    }
 </style>
 
 <section>
