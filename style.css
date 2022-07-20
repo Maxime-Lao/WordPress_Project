@@ -10624,11 +10624,13 @@ body.dark {
   width: 100%;
   position: absolute;
   bottom: 0%;
+  padding: 40px;
 }
 
 .footer-section .cta-text {
   padding-right: 15px;
-  display: inline-block;
+  justify-content: flex-end;
+  text-align: end;
 }
 
 .footer-section .cta-text h4 {
@@ -10643,10 +10645,31 @@ body.dark {
   font-size: 15px;
 }
 
+.cta-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-info-down {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.copyright-text {
+  display: flex;
+}
+
 .copyright-text p {
+  display: flex;
   margin: 0;
   font-size: 14px;
   color: #ffffff;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-menu li {
