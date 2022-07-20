@@ -552,101 +552,119 @@ function footer_section_callout($wp_customize) {
 		'settings' => 'text7',
 	)));
 }
+
 add_action('customize_register', 'footer_section_callout');
 
+function contact_esgi($wp_customize){
+	$wp_customize->add_section('contact_esgi',array(
+		'title'=>'Contact'
+	));
 
-// Partners section
-function partners_section_one( $wp_customize){
-    $wp_customize->add_section('partners_section_one', array(
-      'title'=> 'Page Partners'
-    ));
+	$wp_customize->add_setting('contact-header', array(
+		'default' => 'Contacts.'
+	));
 
-    $wp_customize->add_setting('partners_section_first_image');
-    $wp_customize->add_setting('partners_section_second_image');
-    $wp_customize->add_setting('partners_section_third_image');
-    $wp_customize->add_setting('partners_section_fourth_image');
-    $wp_customize->add_setting('partners_section_fifth_image');
-    $wp_customize->add_setting('partners_section_sixth_image');
+	$wp_customize->add_control( new WP_Customize_Control($wp_customize, 'contact-header-control', array(
+		'label' => 'Phrase d accroche',
+		'section' => 'contact_esgi',
+		'settings' => 'contact-header'
+	)));
 
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Première image',
-            [
-                'label'      => 'Première image',
-                'section'    => 'partners_section_one',
-                'settings'   => 'partners_section_first_image',
-                'width'=> 750 ,
-                'height'=>500
-            ]
-        )
-    ) ;
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Deuxième image',
-            [
-                'label'      => 'Deuxième image',
-                'section'    => 'partners_section_one',
-                'settings'   => 'partners_section_second_image',
-                'width'=> 750 ,
-                'height'=>500
-            ]
-        )
-    ) ;
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Troisième image',
-            [
-                'label'      => 'Troisième image',
-                'section'    => 'partners_section_one',
-                'settings'   => 'partners_section_third_image',
-                'width'=> 750 ,
-                'height'=>500
-            ]
-        )
-    ) ;
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Quatrième image',
-            [
-                'label'      => 'Quatrième image',
-                'section'    => 'partners_section_one',
-                'settings'   => 'partners_section_fourth_image',
-                'width'=> 750 ,
-                'height'=>500
-            ]
-        )
-    ) ;
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Cinquième image',
-            [
-                'label'      => 'Cinquième image',
-                'section'    => 'partners_section_one',
-                'settings'   => 'partners_section_fifth_image',
-                'width'=> 750 ,
-                'height'=>500
-            ]
-        )
-    ) ;
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Sixième image',
-            [
-                'label'      => 'Sixième image',
-                'section'    => 'partners_section_one',
-                'settings'   => 'partners_section_sixth_image',
-                'width'=> 750 ,
-                'height'=>500
-            ]
-        )
-    ) ;
+	$wp_customize->add_setting('text1', array(
+		'default' => 'Location',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text1', array(
+		'label' => 'Titre',
+		'section' => 'contact_esgi',
+		'settings' => 'text1',
+	)));
+
+	$wp_customize->add_setting('text2', array(
+		'default' => '242 rue du faubourg saint atoinne',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text2', array(
+		'label' => 'Adresse',
+		'section' => 'contact_esgi',
+		'settings' => 'text2',
+	)));
+
+	$wp_customize->add_setting('text3', array(
+		'default' => '75012 Paris FRANCE',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text3', array(
+		'label' => 'CP/Pays',
+		'section' => 'contact_esgi',
+		'settings' => 'text3',
+	)));
+
+	$wp_customize->add_setting('text4', array(
+		'default' => 'Manager',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text4', array(
+		'label' => 'Titre',
+		'section' => 'contact_esgi',
+		'settings' => 'text4',
+	)));
+
+	$wp_customize->add_setting('text5', array(
+		'default' => '+33 1 53 31 25 25',
+	));
+	
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text5', array(
+		'label' => 'Numéro de téléphone',
+		'section' => 'contact_esgi',
+		'settings' => 'text5',
+	)));
+	
+	$wp_customize->add_setting('text6', array(
+		'default' => 'info@company.com',
+	));
+	
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text6', array(
+		'label' => 'Email',
+		'section' => 'contact_esgi',
+		'settings' => 'text6',
+	)));
+
+	$wp_customize->add_setting('text7', array(
+		'default' => 'CEO',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text7', array(
+		'label' => 'Titre',
+		'section' => 'contact_esgi',
+		'settings' => 'text7',
+	)));
+
+	$wp_customize->add_setting('text8', array(
+		'default' => '+33 1 53 31 25 25',
+	));
+	
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text8', array(
+		'label' => 'Numéro de téléphone',
+		'section' => 'contact_esgi',
+		'settings' => 'text8',
+	)));
+	
+	$wp_customize->add_setting('text9', array(
+		'default' => 'ceo@company.com',
+	));
+	
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text9', array(
+		'label' => 'Email',
+		'section' => 'contact_esgi',
+		'settings' => 'text9',
+	)));
+
+
 }
-add_action('customize_register','partners_section_one');
+
+
+
+add_action('customize_register','contact_esgi');
 
 ?>
