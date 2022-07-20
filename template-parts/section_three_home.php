@@ -1,25 +1,3 @@
-<style>
-    .section_three_home{
-        width: 100vw;
-        max-width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        margin-top: 100px;
-    }
-    .images{
-        display: flex;
-    }
-
-    /* Resize images */
-    .image{
-        width: 100%;
-        height: auto;
-    }
-</style>
-
 <section class="section_three_home">
     <div class="container section_three">
         <div>

@@ -394,7 +394,7 @@ function home_section_two( $wp_customize){
         )
     );
 }
-add_action('customize_register','home_section_three');
+add_action('customize_register','home_section_two');
 
 
 
