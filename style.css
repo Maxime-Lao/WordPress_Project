@@ -10622,7 +10622,7 @@ body.dark {
   font-family: "Source Serif Pro", serif;
   background: #050A3A;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0%;
   padding: 40px;
 }
