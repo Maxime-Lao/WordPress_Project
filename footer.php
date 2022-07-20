@@ -1,4 +1,16 @@
-		<footer class="footer-section">
+<style>
+    body{
+
+    }
+    footer{
+        position:absolute;
+        bottom:0;
+    }
+
+</style>
+
+<footer class="footer-section">
+
 			<div class="container">
 				<div class="footer-cta pt-5 pb-5">
 					<div class="row">

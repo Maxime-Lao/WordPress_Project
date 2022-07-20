@@ -9,10 +9,12 @@
 		<header id="site-header">
 			<div class="container">
 				<div class="row">
+
 					<div class="col-xl-6 col-md-6 mb-30">
-						<img id="logo" src="<?php bloginfo('template_url'); ?>/assets/images/svg/logo.svg" class="white-svg" alt="logo">
+                        <figure><?= get_custom_logo(); ?></figure>
 					</div>
 					<div class="col-xl-6 col-md-6 mb-30">
+
 						<?php
 						if (has_nav_menu('primary_menu')){
 							wp_nav_menu(
