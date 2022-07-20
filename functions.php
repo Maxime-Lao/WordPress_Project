@@ -207,6 +207,275 @@ function esgi_paginate_links($args) {
 	return $args;
 }
 
+function home_section_one( $wp_customize){
+    $wp_customize->add_section('home_section_one', array(
+      'title'=> 'home section one'
+    ));
+    $wp_customize->add_setting('home_section_one_h1', array(
+       'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_one_p1', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_one_h2', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_one_p2', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_one_h3', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_one_p3', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_one_image');
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'First title',
+            [
+                'label'      => 'test label',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_h1',
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'First Paragraph',
+            [
+                'label'      => 'First Paragraph',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_p1',
+                'type' => 'textarea'
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'Second title',
+            [
+                'label'      => 'Second title',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_h2',
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'Second Paragraph',
+            [
+                'label'      => 'Second Paragraph',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_p2',
+                'type' => 'textarea'
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'Third Title',
+            [
+                'label'      => 'Third Title',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_h3',
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'Third Paragraph',
+            [
+                'label'      => 'Third Paragraph',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_p3',
+                'type' => 'textarea'
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Image First Section',
+            [
+                'label'      => 'Image First Section',
+                'section'    => 'home_section_one',
+                'settings'   => 'home_section_one_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+}
+add_action('customize_register','home_section_one');
+
+
+
+function home_section_two( $wp_customize){
+    $wp_customize->add_section('home_section_two', array(
+        'title'=> 'home section two'
+    ));
+    $wp_customize->add_setting('home_section_two_h1', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_two_image_1');
+    $wp_customize->add_setting('home_section_two_image_2');
+    $wp_customize->add_setting('home_section_two_image_3');
+    $wp_customize->add_setting('home_section_two_image_4');
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'Title',
+            [
+                'label'      => 'Title',
+                'section'    => 'home_section_two',
+                'settings'   => 'home_section_two_h1',
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'First Image',
+            [
+                'label'      => 'First Image',
+                'section'    => 'home_section_two',
+                'settings'   => 'home_section_two_image_1',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Second Image',
+            [
+                'label'      => 'Second Image',
+                'section'    => 'home_section_two',
+                'settings'   => 'home_section_two_image_2',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Third Image',
+            [
+                'label'      => 'Third Image',
+                'section'    => 'home_section_two',
+                'settings'   => 'home_section_two_image_3',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Fourth Image',
+            [
+                'label'      => 'Fourth Image',
+                'section'    => 'home_section_two',
+                'settings'   => 'home_section_two_image_4',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+}
+add_action('customize_register','home_section_three');
+
+
+
+function home_section_three( $wp_customize){
+    $wp_customize->add_section('home_section_three', array(
+        'title'=> 'home section three'
+    ));
+    $wp_customize->add_setting('home_section_three_h1', array(
+        'default'=>'text'
+    ));
+    $wp_customize->add_setting('home_section_three_image_1');
+    $wp_customize->add_setting('home_section_three_image_2');
+    $wp_customize->add_setting('home_section_three_image_3');
+    $wp_customize->add_setting('home_section_three_image_4');
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'Title',
+            [
+                'label'      => 'Title',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_h1',
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'First Image',
+            [
+                'label'      => 'First Image',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_image_1',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Second Image',
+            [
+                'label'      => 'Second Image',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_image_2',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Third Image',
+            [
+                'label'      => 'Third Image',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_image_3',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Fourth Image',
+            [
+                'label'      => 'Fourth Image',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_image_4',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+}
+add_action('customize_register','home_section_three');
+
 
 
 
