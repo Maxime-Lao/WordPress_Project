@@ -1,15 +1,4 @@
-<style>
-    body{
-
-    }
-    footer{
-        position:absolute;
-        bottom:0;
-    }
-
-</style>
-
-<footer class="footer-section">
+git add<footer class="footer-section">
 
 			<div class="container">
 					<div class="row">
