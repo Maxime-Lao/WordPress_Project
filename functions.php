@@ -476,6 +476,84 @@ function home_section_three( $wp_customize){
 }
 add_action('customize_register','home_section_three');
 
+function footer_section_callout($wp_customize) {
+	$wp_customize->add_section('footer_section_callout', array(
+		'title' => 'Footer'
+	));
+
+	$wp_customize->add_setting('text1', array(
+		'default' => 'Manager',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text1', array(
+		'label' => 'Titre',
+		'section' => 'footer_section_callout',
+		'settings' => 'text1',
+	)));
+
+	$wp_customize->add_setting('text2', array(
+		'default' => '+33 1 53 31 25 23',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text2', array(
+		'label' => 'Numéro de téléphone',
+		'section' => 'footer_section_callout',
+		'settings' => 'text2',
+	)));
+
+	$wp_customize->add_setting('text3', array(
+		'default' => 'info@esgi.com',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text3', array(
+		'label' => 'Email',
+		'section' => 'footer_section_callout',
+		'settings' => 'text3',
+	)));
+
+
+	$wp_customize->add_setting('text4', array(
+		'default' => 'CEO',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text4', array(
+		'label' => 'Titre',
+		'section' => 'footer_section_callout',
+		'settings' => 'text4',
+	)));
+
+	$wp_customize->add_setting('text5', array(
+		'default' => '+33 1 53 31 25 25',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text5', array(
+		'label' => 'Numéro de téléphone',
+		'section' => 'footer_section_callout',
+		'settings' => 'text5',
+	)));
+
+	$wp_customize->add_setting('text6', array(
+		'default' => 'ceo@company.com',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text6', array(
+		'label' => 'Email',
+		'section' => 'footer_section_callout',
+		'settings' => 'text6',
+	)));
+
+	$wp_customize->add_setting('text7', array(
+		'default' => '2022 Figma Template by ESGI',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text7', array(
+		'label' => 'Texte',
+		'section' => 'footer_section_callout',
+		'settings' => 'text7',
+	)));
+}
+add_action('customize_register', 'footer_section_callout');
+
 
 // Partners section
 function partners_section_one( $wp_customize){
@@ -570,19 +648,5 @@ function partners_section_one( $wp_customize){
     ) ;
 }
 add_action('customize_register','partners_section_one');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
