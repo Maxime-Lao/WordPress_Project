@@ -5,15 +5,10 @@ $posttags = get_the_tags();
 
 <aside class="sidebar">
 	<div>
-	<h6 class="title-color">Search</h6>
-		<?php
-			get_search_form(
-				array(
-					'aria_label' => __( '404 not found', 'esgi' ),
-				)
-			);
-		?>
-	</div>
+	<h6>Search</h6>
+    <div class="search">
+		<?php get_search_form(); ?>
+    </div>
     <div class="recent-posts">
 		<h6 class="mb-4 title-color">Recents posts</h6>
 		<?php
@@ -25,7 +20,7 @@ $posttags = get_the_tags();
 		<div class="recent-post">
 			<?php echo get_the_post_thumbnail($post_item['ID'], 'full'); ?>
 
-			<div class="recents-post text">
+			<div class="recents-post text-owo">
 				<a class="title-post-color" href="<?php echo get_permalink($post_item['ID']) ?>">
 				<p class="slider-caption-class title-post-color"><?php echo $post_item['post_title'] ?></p>
 				</a>
