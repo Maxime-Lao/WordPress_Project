@@ -2,6 +2,12 @@ $(document).ready(function(){
 
 	ajaxizePageLinks();
 
+	$('.toggle-item').click(function(){
+        $('.toggle-item').toggleClass('close');    
+        $('.burger-menu').toggleClass('burger-open');
+    }
+    ); 
+
 })
 
 function showPage(page){
