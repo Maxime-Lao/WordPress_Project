@@ -409,6 +409,8 @@ function home_section_three( $wp_customize){
     $wp_customize->add_setting('home_section_three_image_2');
     $wp_customize->add_setting('home_section_three_image_3');
     $wp_customize->add_setting('home_section_three_image_4');
+    $wp_customize->add_setting('home_section_three_image_5');
+    $wp_customize->add_setting('home_section_three_image_6');
 
     $wp_customize->add_control(
         new WP_Customize_Control(
@@ -468,6 +470,32 @@ function home_section_three( $wp_customize){
                 'label'      => 'Fourth Image',
                 'section'    => 'home_section_three',
                 'settings'   => 'home_section_three_image_4',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'five Image',
+            [
+                'label'      => 'five Image',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_image_5',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'six Image',
+            [
+                'label'      => 'six Image',
+                'section'    => 'home_section_three',
+                'settings'   => 'home_section_three_image_6',
                 'width'=> 750 ,
                 'height'=>500
             ]
