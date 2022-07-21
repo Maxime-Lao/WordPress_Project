@@ -224,24 +224,27 @@ function home_section_one($wp_customize)
     $wp_customize->add_section('home_section_one', array(
         'title' => 'home section one'
     ));
+
+
     $wp_customize->add_setting('home_section_one_h1', array(
-        'default' => 'text'
+        'default'=>'Who are we?'
     ));
     $wp_customize->add_setting('home_section_one_p1', array(
-        'default' => 'text'
+        'default'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu convallis elit, at convallis magna.'
     ));
     $wp_customize->add_setting('home_section_one_h2', array(
-        'default' => 'text'
+        'default'=>'Our vision'
     ));
     $wp_customize->add_setting('home_section_one_p2', array(
-        'default' => 'text'
+        'default'=>'Nullam faucibus interdum massa. Duis eget leo mattis, pulvinar nisi et, consequat lectus. Suspendisse commodo magna orci, id luctus risus porta pharetra. Fusce vehicula aliquet urna non ultricies.'
     ));
     $wp_customize->add_setting('home_section_one_h3', array(
-        'default' => 'text'
+        'default'=>'Our mission'
     ));
     $wp_customize->add_setting('home_section_one_p3', array(
-        'default' => 'text'
+        'default'=>'Vivamus et viverra neque, ut pharetra ipsum. Aliquam eget consequat libero, quis cursus tortor. Aliquam suscipit eros sit amet velit malesuada dapibus. Fusce in vehicula tellus. Donec quis lorem ut magna tincidunt egestas. '
     ));
+
     $wp_customize->add_setting('home_section_one_image');
 
     $wp_customize->add_control(
@@ -336,20 +339,19 @@ function home_section_two($wp_customize)
     $wp_customize->add_section('home_section_two', array(
         'title' => 'home section two'
     ));
+
     $wp_customize->add_setting('home_section_two_h1', array(
         'default' => 'text'
     ));
     $wp_customize->add_setting('home_section_two_image_1');
     $wp_customize->add_setting('home_section_two_image_2');
-    $wp_customize->add_setting('home_section_two_image_3');
     $wp_customize->add_setting('home_section_two_image_4');
-
     $wp_customize->add_control(
         new WP_Customize_Control(
             $wp_customize,
-            'Title',
+            'Titre',
             [
-                'label'      => 'Title',
+                'label'      => 'Titre',
                 'section'    => 'home_section_two',
                 'settings'   => 'home_section_two_h1',
             ]
@@ -358,7 +360,7 @@ function home_section_two($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Cropped_Image_Control(
             $wp_customize,
-            'First Image',
+            'Image 1',
             [
                 'label'      => 'First Image',
                 'section'    => 'home_section_two',
@@ -371,7 +373,7 @@ function home_section_two($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Cropped_Image_Control(
             $wp_customize,
-            'Second Image',
+            'Image 2',
             [
                 'label'      => 'Second Image',
                 'section'    => 'home_section_two',
@@ -384,20 +386,7 @@ function home_section_two($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Cropped_Image_Control(
             $wp_customize,
-            'Third Image',
-            [
-                'label'      => 'Third Image',
-                'section'    => 'home_section_two',
-                'settings'   => 'home_section_two_image_3',
-                'width' => 750,
-                'height' => 500
-            ]
-        )
-    );
-    $wp_customize->add_control(
-        new WP_Customize_Cropped_Image_Control(
-            $wp_customize,
-            'Fourth Image',
+            'Image 4',
             [
                 'label'      => 'Fourth Image',
                 'section'    => 'home_section_two',
@@ -517,6 +506,158 @@ function home_section_three($wp_customize)
         )
     );
 }
+
+add_action('customize_register','home_section_three');
+
+
+
+function teams( $wp_customize){
+    $wp_customize->add_section('teams', array(
+        'title'=> 'teams'
+    ));
+
+    $wp_customize->add_setting('teams_image_1');
+    $wp_customize->add_setting('teams_image_2');
+    $wp_customize->add_setting('teams_image_3');
+    $wp_customize->add_setting('teams_image_4');
+
+
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'teams1 Image',
+            [
+                'label'      => 'teams Image 1',
+                'section'    => 'teams',
+                'settings'   => 'teams_image_1',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'teams2 Image',
+            [
+                'label'      => 'Second Image',
+                'section'    => 'teams',
+                'settings'   => 'teams_image_2',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'teams3 Image',
+            [
+                'label'      => 'Third Image',
+                'section'    => 'teams',
+                'settings'   => 'teams_image_3',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'teams4 Image',
+            [
+                'label'      => 'Fourth Image',
+                'section'    => 'teams',
+                'settings'   => 'teams_image_4',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    );
+
+}
+add_action('customize_register','teams');
+
+
+
+
+
+function footer_section_callout($wp_customize) {
+	$wp_customize->add_section('footer_section_callout', array(
+		'title' => 'Footer'
+	));
+
+	$wp_customize->add_setting('text1', array(
+		'default' => 'Manager',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text1', array(
+		'label' => 'Titre',
+		'section' => 'footer_section_callout',
+		'settings' => 'text1',
+	)));
+
+	$wp_customize->add_setting('text2', array(
+		'default' => '+33 1 53 31 25 23',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text2', array(
+		'label' => 'Numéro de téléphone',
+		'section' => 'footer_section_callout',
+		'settings' => 'text2',
+	)));
+
+	$wp_customize->add_setting('text3', array(
+		'default' => 'info@esgi.com',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text3', array(
+		'label' => 'Email',
+		'section' => 'footer_section_callout',
+		'settings' => 'text3',
+	)));
+
+
+	$wp_customize->add_setting('text4', array(
+		'default' => 'CEO',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text4', array(
+		'label' => 'Titre',
+		'section' => 'footer_section_callout',
+		'settings' => 'text4',
+	)));
+
+	$wp_customize->add_setting('text5', array(
+		'default' => '+33 1 53 31 25 25',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text5', array(
+		'label' => 'Numéro de téléphone',
+		'section' => 'footer_section_callout',
+		'settings' => 'text5',
+	)));
+
+	$wp_customize->add_setting('text6', array(
+		'default' => 'ceo@company.com',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text6', array(
+		'label' => 'Email',
+		'section' => 'footer_section_callout',
+		'settings' => 'text6',
+	)));
+
+	$wp_customize->add_setting('text7', array(
+		'default' => '2022 Figma Template by ESGI',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text7', array(
+		'label' => 'Texte',
+		'section' => 'footer_section_callout',
+		'settings' => 'text7',
+	)));
+  
 add_action('customize_register', 'home_section_three');
 
 function footer_section_callout($wp_customize)

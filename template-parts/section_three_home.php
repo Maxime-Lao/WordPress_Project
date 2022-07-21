@@ -1,6 +1,6 @@
 <section class="partners-home">
     <div>
-            <h1 class="uwu"><?php echo get_theme_mod('home_section_three_h1') ?></h1><br>
+            <h1 class="titre"><?php echo get_theme_mod('home_section_three_h1') ?></h1><br>
             <div class="partners-flex">
                 <div class="flex-item">
                     <img src="<?php echo wp_get_attachment_url(get_theme_mod('home_section_three_image_1')) ?>">

@@ -11090,6 +11090,10 @@ a {
   width: calc(100%/4);
   height: auto;
 }
+.team-image img{
+  width: 363px;
+  height: 531px;
+}
 .text{
   display: flex;
   align-items: center;
@@ -11174,12 +11178,13 @@ a {
 .image img{
   width: 100%;
 }
-.section_two h1{
+
+
+.titre{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 47px;
-  margin-left: 10%;
   margin-bottom: 3%;
   line-height: 59px;
   color: #050A3A;
@@ -11285,28 +11290,65 @@ a {
 .images{
   display: flex;
 }
+.ourteams{
+  display: flex;
+  justify-content: space-between;
+}
 .page-titre{
-  font-family: 'Mulish';
+  font-family: 'Mulish', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 84px;
+  font-size: 64px;
   line-height: 105px;
   color: #050A3A;
   margin-top: 5%;
   margin-right: 15%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   margin-left: 2%;
-
+  padding-right: 10%;
 }
 .thumbnail{
   right: 0;
-  width: 100%;
-  height: 100%;
+  width: 1487px;
+  height: 631px;
   margin-left: 23%;
 }
 .partners-home{
   position: relative;
   margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.container2{
+  width: 80%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section_ourteam{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.captionteam h2{
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  line-height: 44px;
+  color: #050A3A;
+}
+.captionteam p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #8A8A8A;
 }
 
 /****** HEADER ******/
