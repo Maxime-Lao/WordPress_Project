@@ -690,9 +690,6 @@ function contact_esgi($wp_customize){
 
 
 }
-
-
-
 add_action('customize_register','contact_esgi');
 
 ?>
