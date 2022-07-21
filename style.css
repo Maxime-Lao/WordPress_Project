@@ -10524,6 +10524,7 @@ html {
   --text-color: #000;
   --main-color: #3F51B5;
   --light-grey: #F0F0F0;
+  --light-text: #FFF;
 }
 
 body {
@@ -10590,8 +10591,8 @@ body.dark {
 }
 
 .single-post .post-image img {
-  width: 100%;
-  max-height: 18.75rem;
+  width: 1050px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -10970,6 +10971,104 @@ body.dark {
   width: 70%;
 }
 
+.sidebar {
+  width: 502px;
+  height: 1437px;
+  left: 159px;
+  top: 445px;
+}
+
+.sidebar li {
+  color: #f00;
+}
+
+/*
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+.blog-page {
+  display: flex;
+}
+.blog-item {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 10px 0 0 0;
+  margin: 10px auto 0 0;
+  text-align: start;
+}
+
+.recent-post {
+  height: auto;
+  max-width: 100%;
+  /* verif */
+  padding: 15px 0 30px 0;
+}
+
+.all-recent-post {
+  position: relative;
+  height: auto;
+  width: 470px;
+  margin-left: 100px;
+  left: -40px;
+}
+
+.recent-post img {
+  display:inline-block;
+  vertical-align:top;
+  height: 88px;
+  width: 88px;
+  object-fit: cover;
+}
+
+.all-recent-post img {
+  display:inline-block;
+  vertical-align:top;
+  height: 333px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.recent-post .text {
+  display:inline-block;
+  padding-left: 20px;
+}
+
+.title-color {
+  color: #050A3A;
+}
+
+.title-post-color {
+  color: #8A8A8A;
+}
+
+.date-post-color {
+  color: #ADADAD;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+  letter-spacing: 1px
+}
+
+.post-content-blog {
+=======
 
 .section_two_home{
   width: 100vw;
@@ -11114,6 +11213,58 @@ body.dark {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  line-height: 38px;
+  color: #8A8A8A;
+}
+
+.post-caption {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+}
+
+.single-post-caption {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+  letter-spacing: 1px;
+
+  color: #050A3A;
+}
+
+.space-article {
+  margin-bottom: 50px;
+}
+
+.space-tile {
+  font-weight: 600;
+  font-size: 84px;
+  line-height: 105px;
+  height: 320px;
+}
+
+.single-post p {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+/*
+.tags {
+  width: auto;
+  height: auto;
+  background: #F8F8F8;
+}
+*/
+=======
   line-height: 30px;/* or 190% */
   color: #8A8A8A;
 }
@@ -11199,3 +11350,100 @@ body.dark {
   line-height: 38px;
   color: #8A8A8A;
 }
+
+/****** HEADER ******/
+#site-header {
+  padding: 2.875rem 0 2.5rem;
+}
+#site-header .custom-logo {
+  max-width: 120px;
+  max-height: 40px;
+}
+#site-header nav {
+  margin-top: 1rem;
+}
+#site-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+#site-header ul li {
+  text-align: end;
+}
+#site-header ul li.current-menu-item {
+  position: relative;
+}
+#site-header ul li.current-menu-item a::after {
+  content: "";
+  position: absolute;
+  left: 0.83%;
+  right: 0%;
+  bottom: -0.3125rem;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD0A8 0%, #FF4FC0 100%);
+  bottom: 0.625rem;
+}
+#site-header ul li a {
+  text-decoration: none;
+  color: var(--light-text);
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+#site-header .close {
+  display: none;
+}
+#site-header .menu-item {
+  font-size: 2.1875rem;
+}
+
+.burger-open svg {
+  fill: var(--light-text);
+}
+
+header.burger-open {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.toggle-menu {
+  display: flex;
+  justify-content: end;
+}
+
+.burger-open svg path {
+  fill: var(--light-text);
+}
+.burger-open .toggle-menu {
+  flex-direction: column;
+  align-items: end;
+}
+
+@media screen and (max-width: 768px) {
+  #line-burger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .burger-open .brand {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .burger-open #close-nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .burger-open .toggle-menu {
+    align-items: center;
+  }
+} 
