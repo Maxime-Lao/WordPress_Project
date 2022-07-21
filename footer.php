@@ -6,7 +6,7 @@
 							<div class="cta-text">
 								<img src="<?php bloginfo('template_url'); ?>/assets/images/svg/logo.svg" class="white-svg" alt="logo">
 							</div>
-							<div style="display: flex">
+							<div class="copyright-text">
 								<div class="cta-text">
 									<h4> <?= get_theme_mod('text1') ?></h4><br>
 									<span><?= get_theme_mod('text2') ?></span><br>
