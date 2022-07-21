@@ -11067,9 +11067,6 @@ a {
   letter-spacing: 1px
 }
 
-.post-content-blog {
-=======
-
 .section_two_home{
   width: 100vw;
   max-width: 100vw;
@@ -11255,16 +11252,6 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 38px;
-}
-
-/*
-.tags {
-  width: auto;
-  height: auto;
-  background: #F8F8F8;
-}
-*/
-=======
   line-height: 30px;/* or 190% */
   color: #8A8A8A;
 }

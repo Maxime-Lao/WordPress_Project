@@ -582,84 +582,6 @@ add_action('customize_register','teams');
 
 
 
-function footer_section_callout($wp_customize) {
-	$wp_customize->add_section('footer_section_callout', array(
-		'title' => 'Footer'
-	));
-
-	$wp_customize->add_setting('text1', array(
-		'default' => 'Manager',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text1', array(
-		'label' => 'Titre',
-		'section' => 'footer_section_callout',
-		'settings' => 'text1',
-	)));
-
-	$wp_customize->add_setting('text2', array(
-		'default' => '+33 1 53 31 25 23',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text2', array(
-		'label' => 'Numéro de téléphone',
-		'section' => 'footer_section_callout',
-		'settings' => 'text2',
-	)));
-
-	$wp_customize->add_setting('text3', array(
-		'default' => 'info@esgi.com',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text3', array(
-		'label' => 'Email',
-		'section' => 'footer_section_callout',
-		'settings' => 'text3',
-	)));
-
-
-	$wp_customize->add_setting('text4', array(
-		'default' => 'CEO',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text4', array(
-		'label' => 'Titre',
-		'section' => 'footer_section_callout',
-		'settings' => 'text4',
-	)));
-
-	$wp_customize->add_setting('text5', array(
-		'default' => '+33 1 53 31 25 25',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text5', array(
-		'label' => 'Numéro de téléphone',
-		'section' => 'footer_section_callout',
-		'settings' => 'text5',
-	)));
-
-	$wp_customize->add_setting('text6', array(
-		'default' => 'ceo@company.com',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text6', array(
-		'label' => 'Email',
-		'section' => 'footer_section_callout',
-		'settings' => 'text6',
-	)));
-
-	$wp_customize->add_setting('text7', array(
-		'default' => '2022 Figma Template by ESGI',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text7', array(
-		'label' => 'Texte',
-		'section' => 'footer_section_callout',
-		'settings' => 'text7',
-	)));
-  
-add_action('customize_register', 'home_section_three');
-
 function footer_section_callout($wp_customize)
 {
     $wp_customize->add_section('footer_section_callout', array(
@@ -736,114 +658,195 @@ function footer_section_callout($wp_customize)
         'section' => 'footer_section_callout',
         'settings' => 'text7',
     )));
+
+    add_action('customize_register', 'home_section_three');
+
+    function footer_section_callout($wp_customize)
+    {
+        $wp_customize->add_section('footer_section_callout', array(
+            'title' => 'Footer'
+        ));
+
+        $wp_customize->add_setting('text1', array(
+            'default' => 'Manager',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text1', array(
+            'label' => 'Titre',
+            'section' => 'footer_section_callout',
+            'settings' => 'text1',
+        )));
+
+        $wp_customize->add_setting('text2', array(
+            'default' => '+33 1 53 31 25 23',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text2', array(
+            'label' => 'Numéro de téléphone',
+            'section' => 'footer_section_callout',
+            'settings' => 'text2',
+        )));
+
+        $wp_customize->add_setting('text3', array(
+            'default' => 'info@esgi.com',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text3', array(
+            'label' => 'Email',
+            'section' => 'footer_section_callout',
+            'settings' => 'text3',
+        )));
+
+
+        $wp_customize->add_setting('text4', array(
+            'default' => 'CEO',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text4', array(
+            'label' => 'Titre',
+            'section' => 'footer_section_callout',
+            'settings' => 'text4',
+        )));
+
+        $wp_customize->add_setting('text5', array(
+            'default' => '+33 1 53 31 25 25',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text5', array(
+            'label' => 'Numéro de téléphone',
+            'section' => 'footer_section_callout',
+            'settings' => 'text5',
+        )));
+
+        $wp_customize->add_setting('text6', array(
+            'default' => 'ceo@company.com',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text6', array(
+            'label' => 'Email',
+            'section' => 'footer_section_callout',
+            'settings' => 'text6',
+        )));
+
+        $wp_customize->add_setting('text7', array(
+            'default' => '2022 Figma Template by ESGI',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'text7', array(
+            'label' => 'Texte',
+            'section' => 'footer_section_callout',
+            'settings' => 'text7',
+        )));
+    }
+
+    add_action('customize_register', 'footer_section_callout');
+
+    function contact_esgi($wp_customize)
+    {
+        $wp_customize->add_section('contact_esgi', array(
+            'title' => 'Contact'
+        ));
+
+        $wp_customize->add_setting('contact-header', array(
+            'default' => 'Contacts.'
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contact-header-control', array(
+            'label' => 'Phrase d accroche',
+            'section' => 'contact_esgi',
+            'settings' => 'contact-header'
+        )));
+
+        $wp_customize->add_setting('text1', array(
+            'default' => 'Location',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext1', array(
+            'label' => 'Titre',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext1',
+        )));
+
+        $wp_customize->add_setting('contacttext2', array(
+            'default' => '242 rue du faubourg saint atoinne',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext2', array(
+            'label' => 'Adresse',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext2',
+        )));
+
+        $wp_customize->add_setting('contacttext3', array(
+            'default' => '75012 Paris FRANCE',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext3', array(
+            'label' => 'CP/Pays',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext3',
+        )));
+
+        $wp_customize->add_setting('contacttext4', array(
+            'default' => 'Manager',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext4', array(
+            'label' => 'Titre',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext4',
+        )));
+
+        $wp_customize->add_setting('contacttext5', array(
+            'default' => '+33 1 53 31 25 25',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext5', array(
+            'label' => 'Numéro de téléphone',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext5',
+        )));
+
+        $wp_customize->add_setting('contacttext6', array(
+            'default' => 'info@company.com',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext6', array(
+            'label' => 'Email',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext6',
+        )));
+
+        $wp_customize->add_setting('contacttext7', array(
+            'default' => 'CEO',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext7', array(
+            'label' => 'Titre',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext7',
+        )));
+
+        $wp_customize->add_setting('contacttext8', array(
+            'default' => '+33 1 53 31 25 25',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext8', array(
+            'label' => 'Numéro de téléphone',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext8',
+        )));
+
+        $wp_customize->add_setting('contacttext9', array(
+            'default' => 'ceo@company.com',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext9', array(
+            'label' => 'Email',
+            'section' => 'contact_esgi',
+            'settings' => 'contacttext9',
+        )));
+    }
+
+    add_action('customize_register', 'contact_esgi');
 }
-
-add_action('customize_register', 'footer_section_callout');
-
-function contact_esgi($wp_customize)
-{
-    $wp_customize->add_section('contact_esgi', array(
-        'title' => 'Contact'
-    ));
-
-    $wp_customize->add_setting('contact-header', array(
-        'default' => 'Contacts.'
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contact-header-control', array(
-        'label' => 'Phrase d accroche',
-        'section' => 'contact_esgi',
-        'settings' => 'contact-header'
-    )));
-
-    $wp_customize->add_setting('text1', array(
-        'default' => 'Location',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext1', array(
-        'label' => 'Titre',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext1',
-    )));
-
-    $wp_customize->add_setting('contacttext2', array(
-        'default' => '242 rue du faubourg saint atoinne',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext2', array(
-        'label' => 'Adresse',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext2',
-    )));
-
-    $wp_customize->add_setting('contacttext3', array(
-        'default' => '75012 Paris FRANCE',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext3', array(
-        'label' => 'CP/Pays',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext3',
-    )));
-
-    $wp_customize->add_setting('contacttext4', array(
-        'default' => 'Manager',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext4', array(
-        'label' => 'Titre',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext4',
-    )));
-
-    $wp_customize->add_setting('contacttext5', array(
-        'default' => '+33 1 53 31 25 25',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext5', array(
-        'label' => 'Numéro de téléphone',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext5',
-    )));
-
-    $wp_customize->add_setting('contacttext6', array(
-        'default' => 'info@company.com',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext6', array(
-        'label' => 'Email',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext6',
-    )));
-
-    $wp_customize->add_setting('contacttext7', array(
-        'default' => 'CEO',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext7', array(
-        'label' => 'Titre',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext7',
-    )));
-
-    $wp_customize->add_setting('contacttext8', array(
-        'default' => '+33 1 53 31 25 25',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext8', array(
-        'label' => 'Numéro de téléphone',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext8',
-    )));
-
-    $wp_customize->add_setting('contacttext9', array(
-        'default' => 'ceo@company.com',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contacttext9', array(
-        'label' => 'Email',
-        'section' => 'contact_esgi',
-        'settings' => 'contacttext9',
-    )));
-}
-add_action('customize_register', 'contact_esgi');
