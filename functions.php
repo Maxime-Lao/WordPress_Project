@@ -11,6 +11,9 @@ add_theme_support('post-thumbnails');
 // support de widgets
 add_theme_support('widgets');
 
+
+add_post_type_support( 'blog', 'comments' );
+
 // Définir les emplacements de menu
 
 function register_menu()
@@ -850,3 +853,99 @@ function footer_section_callout($wp_customize)
 
     add_action('customize_register', 'contact_esgi');
 }
+
+// Partners section
+function partners_section_one( $wp_customize){
+    $wp_customize->add_section('partners_section_one', array(
+      'title'=> 'Page Partners'
+    ));
+
+    $wp_customize->add_setting('partners_section_first_image');
+    $wp_customize->add_setting('partners_section_second_image');
+    $wp_customize->add_setting('partners_section_third_image');
+    $wp_customize->add_setting('partners_section_fourth_image');
+    $wp_customize->add_setting('partners_section_fifth_image');
+    $wp_customize->add_setting('partners_section_sixth_image');
+
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Première image',
+            [
+                'label'      => 'Première image',
+                'section'    => 'partners_section_one',
+                'settings'   => 'partners_section_first_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Deuxième image',
+            [
+                'label'      => 'Deuxième image',
+                'section'    => 'partners_section_one',
+                'settings'   => 'partners_section_second_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Troisième image',
+            [
+                'label'      => 'Troisième image',
+                'section'    => 'partners_section_one',
+                'settings'   => 'partners_section_third_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Quatrième image',
+            [
+                'label'      => 'Quatrième image',
+                'section'    => 'partners_section_one',
+                'settings'   => 'partners_section_fourth_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Cinquième image',
+            [
+                'label'      => 'Cinquième image',
+                'section'    => 'partners_section_one',
+                'settings'   => 'partners_section_fifth_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+    $wp_customize->add_control(
+        new WP_Customize_Cropped_Image_Control(
+            $wp_customize,
+            'Sixième image',
+            [
+                'label'      => 'Sixième image',
+                'section'    => 'partners_section_one',
+                'settings'   => 'partners_section_sixth_image',
+                'width'=> 750 ,
+                'height'=>500
+            ]
+        )
+    ) ;
+}
+add_action('customize_register','partners_section_one');
+
+?>
