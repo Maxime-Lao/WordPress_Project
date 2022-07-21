@@ -10590,8 +10590,8 @@ body.dark {
 }
 
 .single-post .post-image img {
-  width: 100%;
-  max-height: 18.75rem;
+  width: 1050px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -10969,3 +10969,156 @@ body.dark {
   background-color: transparent;
   width: 70%;
 }
+
+.sidebar {
+  width: 502px;
+  height: 1437px;
+  left: 159px;
+  top: 445px;
+}
+
+.sidebar li {
+  color: #f00;
+}
+
+/*
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+.blog-page {
+  display: flex;
+}
+.blog-item {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 10px 0 0 0;
+  margin: 10px auto 0 0;
+  text-align: start;
+}
+
+.recent-post {
+  height: auto;
+  max-width: 100%;
+  /* verif */
+  padding: 15px 0 30px 0;
+}
+
+.all-recent-post {
+  position: relative;
+  height: auto;
+  width: 470px;
+  margin-left: 100px;
+  left: -40px;
+}
+
+.recent-post img {
+  display:inline-block;
+  vertical-align:top;
+  height: 88px;
+  width: 88px;
+  object-fit: cover;
+}
+
+.all-recent-post img {
+  display:inline-block;
+  vertical-align:top;
+  height: 333px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.recent-post .text {
+  display:inline-block;
+  padding-left: 20px;
+}
+
+.title-color {
+  color: #050A3A;
+}
+
+.title-post-color {
+  color: #8A8A8A;
+}
+
+.date-post-color {
+  color: #ADADAD;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+  letter-spacing: 1px
+}
+
+.post-content-blog {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #8A8A8A;
+}
+
+.post-caption {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+}
+
+.single-post-caption {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+  letter-spacing: 1px;
+
+  color: #050A3A;
+}
+
+.space-article {
+  margin-bottom: 50px;
+}
+
+.space-tile {
+  font-weight: 600;
+  font-size: 84px;
+  line-height: 105px;
+  height: 320px;
+}
+
+.single-post p {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+/*
+.tags {
+  width: auto;
+  height: auto;
+  background: #F8F8F8;
+}
+*/
