@@ -5,7 +5,7 @@ $posttags = get_the_tags();
 
 <aside class="sidebar">
 	<div>
-	<h6>Search</h6>
+	<h6 class="title-color">Search</h6>
     <div class="search">
 		<?php get_search_form(); ?>
     </div>
