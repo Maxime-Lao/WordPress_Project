@@ -27,13 +27,14 @@ add_action('after_setup_theme', 'register_menu', 0);
 function esgi_add_theme_css_and_js(){
 	wp_enqueue_style('main', get_stylesheet_uri());
 	wp_enqueue_script('main-js', get_template_directory_uri() .'/assets/js/main.js');
-    wp_enqueue_script('main-js2', get_template_directory_uri() .'/src/js/main.js'); 
+  wp_enqueue_script('main-js2', get_template_directory_uri() .'/src/js/main.js'); 
 
 	// Injection d'une variable dans le js
 	$variables = [
 		'ajaxURL' => admin_url('admin-ajax.php')
 	];
 	wp_localize_script('main-js', 'esgi', $variables);
+
 }
 add_action('wp_enqueue_scripts', 'esgi_add_theme_css_and_js', 0);
 
@@ -94,7 +95,6 @@ function esgi_customize_register($wp_customize)
             ]
         )
     );
-
 
     $wp_customize->add_setting('has_sidebar', [
         'type' => 'theme_mod',
