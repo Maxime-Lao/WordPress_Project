@@ -11013,6 +11013,7 @@ body.dark {
     width: 470px;
     margin-left: 100px;
     left: -40px;
+    padding-bottom: 20px;
 }
 
 .recent-post img {
@@ -11029,15 +11030,17 @@ body.dark {
     height: 333px;
     width: 500px;
     object-fit: cover;
+    padding-bottom: 20px;
 }
 
-.recent-post .text {
-    display:inline-block;
-    padding-left: 20px;
+.recent-post .text-owo {
+  display:inline-block;
+  padding-left: 20px;
 }
 
 .title-color {
-    color: #050A3A;
+  color: #050A3A;
+  line-height: 30px;
 }
 
 .title-post-color {
@@ -11434,4 +11437,103 @@ header.burger-open {
         align-items: center;
         align-items: center;
     }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9F9;
+  padding: 1.875rem;
+  margin-top: 3.125rem;
+}
+.comments svg {
+  margin-right: 0.625rem;
+}
+.comment-reply {
+  display: flex;
+  align-items: center;
+}
+.comment-respond {
+  margin-top: 8.6875rem;
+}
+.comment-respond h6 {
+  font-weight: normal;
+}
+.comment-form textarea, .post .comment-form input:not([type=submit]) {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+
+.comment-form input[type=submit] {
+  background-color: transparent;
+  color: #050A3A;
+  border: none;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+  letter-spacing: 1px;
+}
+
+.comment-title {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+
+  /* identical to box height */
+
+  color: #050A3A;
+}
+
+.comments-space {
+  padding-top: 90px;
+}
+
+.comment-title {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 34px;
+
+  /* identical to box height */
+
+  color: #050A3A;
+}
+
+.title-reply {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+
+  /* identical to box height */
+
+  color: #050A3A;
+}
+
+.submit-title {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+  letter-spacing: 1px;
+
+  color: #050A3A;
 }
