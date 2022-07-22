@@ -11,19 +11,19 @@
         <div class="row">
             <div id="information-contact">
                 <div class="info">
-                    <h4>Location</h4>
-                    <p>242 Rue du Faubourg Saint-Antoine</p>
-                    <p>75020 Paris FRANCE</p>
+                    <h4><?php echo get_theme_mod('contacttext1') ?></h4>
+                    <p><?php echo get_theme_mod('contacttext2') ?></p>
+                    <p><?php echo get_theme_mod('contacttext3') ?></p>
                 </div>
                 <div class="info">
-                    <h4>Manager</h4>
-                    <p>+33 1 53 31 25 23</p>
-                    <p>info@company.com</p>
+                    <h4><?php echo get_theme_mod('contacttext4') ?></h4>
+                    <p><?php echo get_theme_mod('contacttext5') ?></p>
+                    <p><?php echo get_theme_mod('contacttext6') ?></p>
                 </div>
                 <div class="info">
-                    <h4>CEO</h4>
-                    <p>+33 1 53 31 25 25</p>
-                    <p>ceo@company.com</p>
+                    <h4><?php echo get_theme_mod('contacttext7') ?></h4>
+                    <p><?php echo get_theme_mod('contacttext8') ?></p>
+                    <p><?php echo get_theme_mod('contacttext9') ?></p>
                 </div>
 
                 <div class=" ">

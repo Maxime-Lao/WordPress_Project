@@ -584,7 +584,7 @@ add_action('customize_register','teams');
 
 
 
-
+/*
 function footer_section_callout($wp_customize)
 {
     $wp_customize->add_section('footer_section_callout', array(
@@ -662,7 +662,7 @@ function footer_section_callout($wp_customize)
         'settings' => 'text7',
     )));
 
-    add_action('customize_register', 'home_section_three');
+    add_action('customize_register', 'footer_section_callout');*/
 
     function footer_section_callout($wp_customize)
     {
@@ -750,17 +750,7 @@ function footer_section_callout($wp_customize)
             'title' => 'Contact'
         ));
 
-        $wp_customize->add_setting('contact-header', array(
-            'default' => 'Contacts.'
-        ));
-
-        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contact-header-control', array(
-            'label' => 'Phrase d accroche',
-            'section' => 'contact_esgi',
-            'settings' => 'contact-header'
-        )));
-
-        $wp_customize->add_setting('text1', array(
+        $wp_customize->add_setting('contacttext1', array(
             'default' => 'Location',
         ));
 
@@ -849,10 +839,9 @@ function footer_section_callout($wp_customize)
             'section' => 'contact_esgi',
             'settings' => 'contacttext9',
         )));
-    }
 
-    add_action('customize_register', 'contact_esgi');
 }
+add_action('customize_register', 'contact_esgi');
 
 // Partners section
 function partners_section_one( $wp_customize){
